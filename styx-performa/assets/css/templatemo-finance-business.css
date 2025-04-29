@@ -391,6 +391,14 @@ header .navbar {
 	border-radius: 15px;
 }
 
+.text-color-blue {
+	color: #2564d9;
+}
+
+.tb-pr {
+	padding-right: 10%;
+}
+
 .Modern-Slider .item .img-fill {
 	background-size: cover;
 	background-position: center center;
