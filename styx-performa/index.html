@@ -658,11 +658,12 @@
       document.addEventListener("DOMContentLoaded", function () {
         const sections = document.querySelectorAll(".section-animation");
     
-        const observer = new IntersectionObserver((entries, observer) => {
+        const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
               entry.target.classList.add("visible");
-              observer.unobserve(entry.target); // Optional: stop observing after animation
+            } else {
+              entry.target.classList.remove("visible"); // This makes it animate again when scrolling back
             }
           });
         }, {
