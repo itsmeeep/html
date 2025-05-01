@@ -5,6 +5,9 @@ TemplateMo - Finance Business
 https://templatemo.com/tm-545-finance-business
 
 */
+html {
+	scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -1360,4 +1363,18 @@ footer .contact-form button.filled-button:hover {
 		color: #2564d9!important;
 		border-bottom: none!important;
 	}
+}
+
+@media (max-width: 380px) {
+	.navbar-brand h2 {
+		font-size: 17px !important;
+	}
+
+	.mobile-section-header {
+		font-size: 25px !important;
+	}
+}
+
+.vision-mission-icon {
+	font-size: 14px !important;
 }
