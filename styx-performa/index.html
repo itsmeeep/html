@@ -88,7 +88,7 @@
     </div>
     <!-- Banner Ends Here -->
 
-    <div class="more-info mt-5">
+    <div class="more-info mt-5 section-animation fade-in">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -151,7 +151,7 @@
       </div>
     </div>
 
-    <div class="contact-information mt-5">
+    <div class="contact-information mt-5 section-animation fade-in">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -183,7 +183,7 @@
       </div>
     </div>
 
-    <div class="services mt-5">
+    <div class="services mt-5 section-animation fade-in">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -225,7 +225,7 @@
       </div>
     </div>
 
-    <div class="fun-facts mt-5">
+    <div class="fun-facts mt-5 section-animation fade-in">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -267,7 +267,7 @@
       </div>
     </div>
 
-    <div class="single-services mt-5">
+    <div class="single-services mt-5 section-animation fade-in">
       <div class="container">
         <div class="row">
           <div class="col-md-6 align-self-center mb-5">
@@ -361,7 +361,7 @@
       </div>
     </div>
 
-    <div class="more-info mt-5">
+    <div class="more-info mt-5 section-animation fade-in">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -412,7 +412,7 @@
       </div>
     </div>
 
-    <div class="testimonials mt-5 p-5">
+    <div class="testimonials mt-5 p-5 section-animation fade-in">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -654,6 +654,26 @@
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/accordions.js"></script>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll(".section-animation");
+    
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target); // Optional: stop observing after animation
+            }
+          });
+        }, {
+          threshold: 0.1
+        });
+    
+        sections.forEach(section => {
+          observer.observe(section);
+        });
+      });
+    </script>
 
     <script language = "text/Javascript"> 
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
