@@ -239,7 +239,7 @@ header {
 	z-index: 99999;
 	width: 100%;
 	background-color: transparent!important;
-	height: 80px;
+	height: 100px;
 	-webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
@@ -356,6 +356,10 @@ header .navbar {
   max-width: none;
 }
 
+.img-fill h7 {
+	font-size: 20px;
+}
+
 *,
 *:before,
 *:after {
@@ -410,15 +414,15 @@ header .navbar {
 }
 
 .Modern-Slider .item-1 .img-fill {
-	background-image: url(../images/banner-bg-1.jpg);
+	background-image: url(../images/banner-bg-1.png);
 }
 
 .Modern-Slider .item-2 .img-fill {
-	background-image: url(../images/banner-bg-2.jpg);
+	background-image: url(../images/banner-bg-2.png);
 }
 
 .Modern-Slider .item-3 .img-fill {
-	background-image: url(../images/banner-bg-3.jpg);
+	background-image: url(../images/banner-bg-3.png);
 }
 
 .Modern-Slider .NextArrow{
@@ -1381,6 +1385,10 @@ footer .contact-form button.filled-button:hover {
 	.styx-logo {
 		width: 130px !important;
 	}
+
+	.banner-product-text {
+		margin-top: 0px !important;
+	}
 }
 
 .vision-mission-icon {
@@ -1403,5 +1411,21 @@ footer .contact-form button.filled-button:hover {
 }
 
 .styx-logo {
-	width: 150px;
+	width: 100px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.banner-product-img {
+	width: 150px !important;
+}
+
+.banner-product-text {
+	margin-top: 220px;
+}
+
+.text-black {
+	color: black !important;
 }
