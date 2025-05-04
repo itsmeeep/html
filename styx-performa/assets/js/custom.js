@@ -121,25 +121,4 @@ jQuery( document ).ready(function( $ ) {
             return ((compareBottom <= viewBottom) && (compareTop >= viewTop) && $t.is(':visible'));
 
         }
-
-        $(window).scroll(function(){
-
-          if(visible($('.count-digit')))
-            {
-              if($('.count-digit').hasClass('counter-loaded')) return;
-              $('.count-digit').addClass('counter-loaded');
-              
-        $('.count-digit').each(function () {
-          var $this = $(this);
-          jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
-            duration: 3000,
-            easing: 'swing',
-            step: function () {
-              $this.text(Math.ceil(this.Counter));
-            }
-          });
-        });
-        }
-    })
- 
 });

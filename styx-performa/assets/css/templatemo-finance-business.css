@@ -1373,6 +1373,14 @@ footer .contact-form button.filled-button:hover {
 	.mobile-section-header {
 		font-size: 25px !important;
 	}
+
+	.styx-title {
+		display: none;
+	}
+
+	.styx-logo {
+		width: 130px !important;
+	}
 }
 
 .vision-mission-icon {
@@ -1383,9 +1391,17 @@ footer .contact-form button.filled-button:hover {
 	opacity: 0;
 	transform: translateY(20px);
 	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  
-  .section-animation.visible {
+}
+
+.section-animation.visible {
 	opacity: 1;
 	transform: translateY(0);
-  }
+}
+
+.footer-align {
+	text-align: right;
+}
+
+.styx-logo {
+	width: 150px;
+}
