@@ -1369,6 +1369,7 @@ footer .contact-form button.filled-button:hover {
 	}
 }
 
+/* mobile */
 @media (max-width: 380px) {
 	.navbar-brand h2 {
 		font-size: 17px !important;
@@ -1428,4 +1429,17 @@ footer .contact-form button.filled-button:hover {
 
 .text-black {
 	color: black !important;
+}
+
+.categories-img {
+	height: 130px;
+}
+
+.categories-img:hover {
+	transition: transform 0.3s ease;
+	transform: scale(1.2); /* Scale the image by 1.2 times when hovered */
+}
+
+.categories-detail-hide {
+	display: none;
 }
