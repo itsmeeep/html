@@ -1443,3 +1443,7 @@ footer .contact-form button.filled-button:hover {
 .categories-detail-hide {
 	display: none;
 }
+
+.categories-detail-img {
+	width: 200px;
+}
