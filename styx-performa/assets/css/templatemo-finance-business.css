@@ -1390,6 +1390,10 @@ footer .contact-form button.filled-button:hover {
 	.banner-product-text {
 		margin-top: 0px !important;
 	}
+
+	.mobile-img-center {
+		text-align: center !important;
+	}
 }
 
 .vision-mission-icon {
@@ -1431,10 +1435,6 @@ footer .contact-form button.filled-button:hover {
 	color: black !important;
 }
 
-.categories-img {
-	height: 130px;
-}
-
 .categories-img:hover {
 	transition: transform 0.3s ease;
 	transform: scale(1.2); /* Scale the image by 1.2 times when hovered */
@@ -1446,4 +1446,8 @@ footer .contact-form button.filled-button:hover {
 
 .categories-detail-img {
 	width: 200px;
+}
+
+.categories-img {
+	height: 130px;
 }
